@@ -1,0 +1,368 @@
+@font-face {
+  font-family: headerFont;
+  src: url('AdmirationPains.ttf');
+  }
+body{
+  background-color: white;
+}
+p, h2, h3, h4, a{
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 16px;
+}
+h2{
+  padding: 1%;
+  text-align: center;
+  font-size: 30pt;
+}
+h3{
+  font-size: 24pt;
+  padding-top:100px;
+}
+h4{
+  font-size: 20px;
+  text-align: center;
+}
+.projText{
+  font-size: 20pt;
+}
+.textWrapper p{
+  font-size: 16pt;
+}
+a:visited{
+  color: gray;
+  text-decoration: none;
+}
+a:hover{
+  color: #D7D1D9;
+  cursor:pointer;
+}
+a:link{
+  color: black;
+}
+.noUnderline{
+  text-decoration: none;
+}
+header{
+  background-color: white;
+}
+#fullName{
+  font-size: 8em;
+  font-family: headerFont;
+}
+#davis{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#name{
+  padding: 100px;
+  text-align: center;
+  color:white;
+  background-image: url("../images/blacktriangles.png");
+}
+.container{
+  margin-top: 7%;
+  background-image: url("../images/blacktriangles.png");
+  padding:50px;
+  overflow:auto;
+}
+#navigation{
+  text-align: center;
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom:40px;
+}
+#navigation a:link{
+  color: black;
+  text-decoration: none;
+  padding:20px;
+}
+
+.aboutSection{
+  padding: 10px 70px 0px 40px;
+}
+.aboutSection p{
+  text-align: left;
+}
+#home{
+  margin: 7%;
+}
+#me{
+  float:left;
+  margin: 3%;
+}
+#email{
+  margin:20%;
+}
+.socialIcons{
+  text-align: center;
+  margin-top: 10px;
+}
+#linkedIn{
+  display: inline-block;
+}
+#projects{
+  margin-top: 5%;
+  overflow:auto;
+  background-color: white;
+  border: black 2px solid;
+}
+#projects img{
+  width: 375px;
+  height: 300px;
+  margin-bottom: 20px;
+  clear: left;
+  display: block;
+}
+.textWrapper{
+    clear:right;
+  display: block;
+  height:300px;
+  margin-top: 30px;
+}
+#projects h3, p{
+  text-align: center;
+  margin: 15px;
+}
+#contact{
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 20px;
+  width: 40%;
+  background-color:  white;
+  overflow:auto;
+  border: 2px solid black;
+}
+#projectsWrapper{
+  margin-left: 20px;
+  padding: 30px;
+
+}
+
+.flip-container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  float:left;
+  display: block;
+  clear:left;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 375px;
+  height: 300px;
+}
+.back{
+  background-color: white;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  border: black 1px solid;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  border: black 1px solid;
+  background-color: white;
+}
+@media only screen and (max-width: 1100px){
+  .projText{
+    font-size: 16pt;
+  }
+  .textWrapper p{
+    font-size: 12pt;
+  }
+}
+@media only screen and (max-width: 850px){
+  #projects img{
+    width:250px;
+    height: 200px;
+  }
+  .flip-container{
+    width:250px;
+    height: 200px;
+  }
+  .flip-container, .front, .back{
+    width:250px;
+    height: 200px;
+  }
+  .back a{
+    font-size: 14pt;
+  }
+  h3{
+    padding-top: 50px;
+  }
+  #projects p{
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .flipper{
+    margin: auto;
+  }
+  .textWrapper{
+    clear:both;
+    height:230px;
+  }
+  #projects img{
+    width:420px;
+    height: 330px;
+  }
+  .flip-container{
+    width:420px;
+    height: 330px;
+    text-align: center;
+  }
+  .flip-container, .front, .back{
+    width:420px;
+    height: 330px;
+  }
+  .back a{
+    font-size: 24pt;
+  }
+  #socials{
+    width: 20%;
+    margin: 0 auto;
+  }
+
+}
+@media only screen and (max-width: 640px){
+  #fullName{
+    font-size: 5em;
+  }
+  #socials{
+    width: 110px;
+  }
+  #projectsWrapper{
+    margin-left: 0px;
+  }
+  #projects img{
+    width:350px;
+    height: 270px;
+  }
+  .flip-container{
+    width:350px;
+    height: 270px;
+  }
+  .flip-container, .front, .back{
+    width:350px;
+    height: 270px;
+  }
+  .back a{
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 500px){
+  #projects img{
+    width:300px;
+    height: 220px;
+  }
+  .flip-container{
+    width:300px;
+    height: 220px;
+  }
+  .flip-container, .front, .back{
+    width:300px;
+    height: 220px;
+  }
+  .back a{
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 455px){
+  #me{
+    width: 250px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #meBox{
+    width:100%;
+  }
+  .aboutSection{
+    padding: 10px;
+  }
+  .container{
+    padding: 0px;
+  }
+  h2{
+    font-size: 18pt;
+  }
+  h4{
+    font-size:12pt;
+  }
+
+  #navigation{
+    font-size: 1.7em;
+  }
+  #navigation a:link{
+    padding: 10px;
+  }
+  .aboutSection{
+    padding: 0px;
+  }
+  #fullName{
+    font-size: 4em;
+  }
+  #angela{
+    padding-top: 30px;
+  }
+  #name{
+    padding:0px;
+  }
+  #allProjects{
+    margin-top:-100px;
+  }
+  #projectsWrapper{
+    padding: 0px;
+  }
+  #projects img{
+    width:200px;
+    height: 150px;
+  }
+  .flip-container{
+    width:200px;
+    height: 150px;
+    float:none;
+    margin:0 auto;
+  }
+  .flip-container, .front, .back{
+    width:200px;
+    height: 150px;
+  }
+  .back a{
+    font-size: 14pt;
+  }
+  #gifFinder{
+    margin-top: 100px;
+  }
+  #contact{
+    width:90%;
+    margin-left: 0px;
+  }
+
+}
